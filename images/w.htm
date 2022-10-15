@@ -1,0 +1,37 @@
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src chrome:; object-src 'none'">
+    <meta charset="utf-8">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" media="screen, projection" type="text/css" href="w_files/common.css">
+    <link rel="stylesheet" media="screen, projection" type="text/css" href="w_files/info-pages.css" title="infop">
+    <link rel="stylesheet" type="text/css" href="w_files/aboutconfig.css">
+    <link rel="localization" href="branding/brand.ftl">
+    <link rel="localization" href="toolkit/about/config.ftl">
+    <link rel="icon" href="chrome://global/skin/icons/settings.svg">
+    <script src="w_files/aboutconfig.js"></script>
+    <title data-l10n-id="about-config-page-title">Advanced Preferences</title>
+  </head>
+  <body class="table-shown">
+      <div id="toolbar">
+        <!-- Use a unique ID to prevent showing autocomplete results from other
+             browser pages with similarly named fields. -->
+        <input type="text" id="about-config-search" data-l10n-id="about-config-search-input1" placeholder="Search preference name" value="dom.moduleScripts.enabled">
+        <label class="checkbox-container">
+          <input type="checkbox" id="about-config-show-only-modified" checked="checked">
+          <span data-l10n-id="about-config-show-only-modified">Show only modified preferences</span>
+        </label>
+      </div>
+
+      <table id="prefs"><tr class="hidden"><th scope="row"><span>dom.<wbr>moduleScripts.<wbr>enabled</span></th><td class="cell-value"><span data-l10n-id="about-config-pref-accessible-value-default" data-l10n-args="{&quot;value&quot;:&quot;true&quot;}" aria-label="true (default)"><span aria-hidden="true">true</span></span></td><td class="cell-edit"><button data-l10n-id="about-config-pref-toggle-button" class="button-toggle semi-transparent" title="Toggle"></button></td><td class="cell-reset"></td></tr></table>
+
+      <div class="config-background-wrapper">
+        <button id="show-all" class="ghost-button" data-l10n-id="about-config-show-all">Show All</button>
+        <div class="config-background"></div>
+        <p class="config-help-text" data-l10n-id="about-config-caution-text">Changing these preferences can impact Firefox performance or security.</p>
+      </div>
+    </body></html>

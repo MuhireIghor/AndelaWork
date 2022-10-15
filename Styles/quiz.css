@@ -1,0 +1,43 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.quiz_page{
+    background-color: white;
+    box-shadow:3px 3px 2px rgb(243, 237, 247);
+    width: 90vw;
+    height: 90vh;
+    margin: 20px auto;
+}
+.quiz_page_main{
+
+}
+.quizName{
+    text-align: center;
+}
+.title{
+    text-align: center;
+    margin-top: 10px;
+}
+.quest{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    
+}
+.option{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 40px;
+}
+.quest_variable{
+    font-weight: 700;
+}
+.quest_default{
+    margin-right: 20px;
+}
+.optBox{
+margin-right: 10px;
+}
