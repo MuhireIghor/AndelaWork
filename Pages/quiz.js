@@ -1,4 +1,3 @@
-var value=false;
 const questions = [
     {
         number:1,
@@ -36,62 +35,36 @@ const questions = [
         ]
     }
 ]   
-const handleChange = ()=>{
-value=!value;
-console.log(value);
-}
-const question1 = document.createElement("div");
-const question2 = document.createElement("div");
-const question3 = document.createElement("div");
-const question4 = document.createElement("div");
-const question5= document.createElement("div");
+
 
 const container2 = document.getElementsByClassName("answers");
-// questions.map((question,index)=>{
-//     question1.innerHTML = `<p >${question.question}</p>
-//     <div class='option' id=${index}>
-//     <input type='checkbox' value=${value} onClick=${handleChange()} />  
-//     <p >${question.answers[0]}</p>
-//     </div>
-//     <div class='option'>
-//     <input type='checkbox' value=${value} onClick=${handleChange()}/>
-//     <p>${question.answers[1]}</p>
-//     </div>
-//     <div class='option'>
-//     <input type='checkbox' value=${value} onClick=${handleChange()} />
-//     <p>${question.answers[2]}</p>
-//     </div>
-//     <div class='option'>
-//     <input type='checkbox' value=${value} onClick=${handleChange()}  />
-//     <p>${question.answers[3]}</p>
-//     </div>
-
-//     `
-
-// })
-    // question2.innerHTML = `<p>Question 1</p>`
-    // question3.innerHTML = `<p>Question 1</p>`
-    // question4.innerHTML = `<p>Question 1</p>`
-    // question5.innerHTML = `<p>Question 1</p>`
 
     var template = document.createElement("div");
-    questions.map((question,index)=>{
-        template.innerHTML = `<p id=${index}>${question.question}</p>
-        <p>${}</p>
+    var index = 0;
+ const handleClick =()=>{
+index--;
+console.log(index);
+ }
+ const handleNext=(index)=>{
+index++;
+console.log(index);
+ }
+
+        template.innerHTML = `
+        <div class='option'>
+        <p class='class1'>Question ${questions[index].number}</p>
+        <p id=${index}>${questions[index].question}</p>
+        </div>
+        <div class='answer'>
+
+        <p>${questions[index].answers[0]}</p>
+        <p>${questions[index].answers[1]}</p>
+        <p>${questions[index].answers[2]}</p>
+        <p>${questions[index].answers[3]}</p>
+        </div> `
+            container2[0].appendChild(template);
         
-        `
 
-    })
-    
-
-console.log(Object.values(container2));
-
-    
-    container2[0].appendChild(template);
-    // container2[i].appendChild(question2);
-    // container2[i].appendChild(question3);
-    // container2[i].appendChild(question4);
-    // container2[i].appendChild(question5);
 
 
 
