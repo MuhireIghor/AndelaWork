@@ -1,54 +1,152 @@
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-.quiz_page{
+
+.quiz_page {
     background-color: white;
-    box-shadow:3px 3px 2px rgb(243, 237, 247);
     width: 90vw;
     height: 90vh;
     margin: 20px auto;
 }
-.quiz_page_main{
 
-}
-.quizName{
+
+.quizName {
     text-align: center;
 }
-.title{
+
+.title {
     text-align: center;
     margin-top: 10px;
 }
-.quest{
+
+.quest {
     display: flex;
     flex-direction: row;
     width: 80%;
-    
+
 }
-.option{
+
+.option {
     display: flex;
     flex-direction: row;
     padding: 10px 40px;
 }
-.quest_variable{
+
+.quest_variable {
     font-weight: 700;
 }
-.quest_default{
+
+.quest_default {
     margin-right: 20px;
 }
-.optBox{
-margin-right: 10px;
+
+.optBox {
+    margin-right: 10px;
 }
-.class1{
+
+.class1 {
     position: absolute;
-    left:1%
+    left: 1%
 }
-.class1{
+
+.class1 {
     font-weight: 900;
+
+}
+
+.answer {
+    margin-left: 35px;
+}
+
+#div {
+    background-color:white;
+    box-shadow: 3px 6px 3px 3px  rgb(208, 199, 215);
+    border-spacing: 2rem;
+    padding: 20px;
+    height: 20rem;
+    width: 80%;
+    position: absolute;
+    top: 10rem;
+
+
+}
+
+.quiz_Questions {
+    display: flex;
+    align-items: center;
+
+}
+
+.questionIntro {
+    display: flex;
+    padding: 10px 20px;
+}
+
+span {
+    font-weight: 900;
+}
+
+.ansOpt {
+    margin-left: 120px;
+}
+
+.ansBlock {
+    display: flex;
+}
+
+.ansBlock>p {
+    margin-left: 20px;
+}
+#next,#prev,#marker{
+    padding: 10px;
+    background-color:black;
+    color:white;
+    border:none;
+    outline: none;
+    margin: 20px;
+    border-radius: 5px;
+    width: 12rem;
+
+}
+.choice2{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 18rem;
+    left: 37rem;
+
+}
+.choice2>input{
+    margin-left: 20px;
+}
+.show{
+    display: block;
+    box-shadow: 3px 6px 3px 3px  rgb(208, 199, 215);
+    margin-top: 10px;
+   margin-right: 40px;
+   padding: 5px;
+   text-align: center;
+}
+.hide{
+    display: none;
+}
+.butts{
+    display: flex;
     
 }
-.answer{
-        margin-left:35px;
+.butts>label{
+    margin-right: 10px;
+}
+.butts>input{
+    margin-right: 20px;
+    outline: none;
+}
+.ansRev{
+    display: none;
+}
+.proclaim{
+    display: block;
 }

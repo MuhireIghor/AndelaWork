@@ -20,10 +20,26 @@
             <p class="title">Select The Correct Answer</p>
             <div class="quiz_Questions">
 
-                <form class="answers" >
-       
-                    <button id="next" onclick="handleNext()" type="submit">Next</button>
-                    <button id="next" onclick="handleClick()" type="submit">Previous</button>
+                <form id="answers" onsubmit="handleSubmit()" >
+       <div id="div"></div>
+                   <button id="next" type="button">next</button>
+                   <button id="prev" type="button">prev</button>
+                   <button id="marker" type="submit">Get marked</button>
+                   <div class="choice2">
+
+                       <label>Show Answer</label>
+                       <div class="butts">
+
+                           <label>ON</label>
+                           <input type = "radio" name = "choice" onclick="handleToogle()"/>
+                           <label>OFF   </label>
+                           <input type = "radio" name = "choice" onclick="handleToogle()"/>
+                       </div>
+                       <div class="ansRev">
+                        
+
+                       </div>
+                   </div>
 </form>
 
             </div>
