@@ -40,13 +40,13 @@ const questions = [
 const container2 = document.getElementsByClassName("answers");
 
     var template = document.createElement("div");
-    var index = 0;
+    var index2 = 0;
  const handleClick =()=>{
-index--;
+var index = index2-1;
 console.log(index);
  }
- const handleNext=(index)=>{
-index++;
+ const handleNext=()=>{
+var index = index2+1;
 console.log(index);
  }
 
